@@ -167,7 +167,7 @@ window.onload = function () {
 		tweetBtn.ontouchend = function () {				//S_Tweetボタンをタッチした（タッチして離した）時にこの中の内容を実行する
 			//ツイートＡＰＩに送信
 			//結果ツイート時にURLを貼るため、このゲームのURLをここに記入してURLがツイート画面に反映されるようにエンコードする
-			const url = encodeURI("https://microsoftofficial.github.io/Nishiuma-Shooter.com/");
+			const url = encodeURI("https://kiiiibo.github.io/idukashooting/");
 			window.open("http://twitter.com/intent/tweet?text=頑張って" + point + "井塚ポイント入手した&hashtags=井塚シューティング&url=" + url); //ハッシュタグにahogeタグ付くようにした。
 		};
 
