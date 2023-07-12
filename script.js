@@ -124,7 +124,7 @@ window.onload = function () {
 				game.pushScene(endScene);				//endSceneシーンを読み込ませる
 
 				//ゲームオーバー後のテキスト表示
-				gameOverText.text = "GAMEOVER!!  記録：" + point + "井塚ポイント";				//テキストに文字表示 
+				gameOverText.text = "GAMEOVER!!  記録：" + point + "いーちゃんポイント";				//テキストに文字表示 
 			}
 
 		};
