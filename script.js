@@ -23,6 +23,9 @@ window.onload = function () {
 	const tweetImgUrl = "tweet.png";						//game.htmlからの相対パス
 	game.preload([tweetImgUrl]);					//データを読み込んでおく		
 
+	const gameoverSndUrl = "click2.wav";
+	game.preload([gameoverSndUrl]);
+
 	//読み込み終わり
 	/////////////////////////////////////////////////
 
@@ -122,6 +125,7 @@ window.onload = function () {
 			if (zoyamaImg.x >= 400) {						//画面端にぞう山画像が行ってしまったら
 				game.popScene();					//mainSceneシーンを外す
 				game.pushScene(endScene);				//endSceneシーンを読み込ませる
+				game.assets[gameoverSndUrl].play();
 
 				//ゲームオーバー後のテキスト表示
 				gameOverText.text = "GAMEOVER!!  記録：" + point + "井塚ポイント";				//テキストに文字表示 
