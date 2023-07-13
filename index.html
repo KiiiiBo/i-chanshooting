@@ -1,0 +1,74 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="ja">
+    <meta meta name="viewport" content="width=device-width,initial-scale=1">
+</meta>
+<head>
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-ZNEY0719M1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-ZNEY0719M1');
+</script>
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=500px,user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link rel="icon" type="image/png" href="zoyama.png">
+    <title>いーちゃんシューティング</title>
+    <style type="text/css">
+        a:link {
+            text-decoration: none;
+            color: #E6E6FA;
+        }
+
+        body {
+            background-color: #000000;
+            background-image: url("space.png"); /* 画像 */
+   background-size: cover;               /* 全画面 */
+   background-attachment: fixed;         /* 固定 */
+   background-position: center center;   /* 縦横中央 */
+            color: #FFFFFF;
+        }
+
+        .center {
+            border: 1px solid gray;
+            width: 420px;
+            margin-right: auto;
+            margin-left: auto;
+        }
+        @media screen and(max-width: 480px) {
+    img {
+    border: 0;
+    }
+    }
+@media screen and(min-width: 1280px) {
+    img {
+    border: 1px solid red;
+    }
+}
+    </style>
+</head>
+
+<body>
+    <div class="center">
+        <iframe src="game.html" width=" 400" height="500" scrolling="no" marginwidth="0" marginheight="0"
+            frameborder="0" style="border:none;"></iframe>
+        <h2>遊び方</h2>
+        <p>いーちゃんの顔をクリックできた回数を競おう！</p>
+        <h2>お借りした素材</h2>
+        <a href="zoyama.png">加工したいーちゃんの顔面</a>
+        <br>
+        <script type="text/javascript">
+            history.pushState(null, null, location.href);
+            $(window).on('popstate', function(){
+              history.go(1);
+            });
+           </script>
+    </div>
+</body>
+
+</html>
